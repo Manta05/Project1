@@ -1,15 +1,15 @@
 body {
-  text-align: center;
-  background-color: lightgrey;
+  background-image: linear-gradient(to bottom, grey, #F4F4F4);
   font-family: 'Ubuntu', sans-serif;
   margin: 0;
-  background-image: linear-gradient(to bottom, grey, #F4F4F4);
+  text-align: center;
+
 }
 
 .header {
-  text-align: center;
   background: #333;
   color: #fff;
+  text-align: center;
   width: 100%;
 }
 
@@ -21,28 +21,28 @@ body {
   padding-left: 1rem;
 }
 
-/* BUlk div that holds the majority of the body */
+/* need changes */
 .container {
-  max-width: 900px;
-  display: block;
-  margin: auto;
   background-color: darkgrey;
   box-shadow: 20px 20px 20px grey;
+  display: block;
+  max-width: 900px;
+  margin: auto;
 }
 
 /* showing a group of products and the style of them */
 .pic_group_1 {
   background-size: 100% 100%;
+  opacity: 1;
   object-fit: cover;
   width: 100%;
   height: 50vh;
-  opacity: 1;
 }
 
 .pic_group_1:hover {
-  transition: all 650ms;
-  opacity: 0.5;
   border-radius: 40px;
+  opacity: 0.5;
+  transition: all 650ms;
   transform: translateY(-8px);
 }
 
@@ -53,52 +53,73 @@ body {
   }
 }
 
-/* these  are the 3 interactive links */
+@media only screen and (max-width: 700px) {
+
+  .tea{
+    display: block;
+    margin-left: 120px;
+    }
+  .press{
+    display: block;
+    margin-left: 120px
+    }
+  .mug{
+    display: block;
+    margin-left:120px
+    }
+}
+
+/* these  are the bottom links */
 .press {
-  width: 15.5%;
-  height: auto;
   box-shadow: 20px 20px 20px grey;
+  width: 295;
+  height: auto;
 }
 
 .press:hover {
+  border-radius: 40px;
+  opacity: 0.5;
   transition: 650ms;
   transition: width 2s, opacity .5;
-  opacity: 0.5;
-  border-radius: 40px;
   transform: translateY(-10px);
-  width: 18%;
+  width: 330px;
 }
 
 .tea {
-  width: 15.5%;
-  height: auto;
   box-shadow: 20px 20px 20px grey;
+  width: 295px;
+  height: auto;
 }
 
 .tea:hover {
+  border-radius: 40px;
+  opacity: 0.5;
   transition: 650ms ease-in-out;
   transition: width 2s, opacity .5;
-  opacity: 0.5;
-  border-radius: 40px;
   transform: translateY(-10px);
-  width: 18%;
+  width: 330px;
 }
 
 .mug {
-  width: 15.5%;
-  height: auto;
   box-shadow: 20px 20px 20px grey;
+  width: 295px;
+  height: auto;
+  max-width:100%;
 }
 
 .mug:hover {
-  transition: 650ms ease-out;
-  opacity: 0.5;
-  transition: width 2s, opacity .5;
   border-radius: 40px;
+  opacity: 0.5;
+  transition: 650ms ease-out;
+  transition: width 2s, opacity .5;
   transform: translateY(-10px);
-  width: 18%;
+  width: 330px;
 }
 
 footer {
   margin: 9rem;
+  padding-left: 165px;
+  padding-right: 165px;
+  text-align: center;
+  width: 60%;
 }
